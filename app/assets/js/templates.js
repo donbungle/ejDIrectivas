@@ -2,7 +2,85 @@ angular.module('ejdirectivas').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('app/modules/home/home.html',
-    "<div class=\"container\">\n" +
+    "<div class=\"container2\">\n" +
+    "	<br>\n" +
+    "	<md-content class=\"md-padding\" layout-xs=\"column\" layout=\"row\">\n" +
+    "		<div flex-xs flex-gt-xs=\"50\" layout=\"column\">\n" +
+    "		  <md-card md-theme=\"{{ showDarkTheme ? 'dark-grey' : 'default' }}\" md-theme-watch>\n" +
+    "			<md-card-title>\n" +
+    "			  <md-card-title-text>\n" +
+    "				<span class=\"md-headline\">Card with image</span>\n" +
+    "				<span class=\"md-subhead\">Large</span>\n" +
+    "			  </md-card-title-text>\n" +
+    "			  <md-card-title-media>\n" +
+    "				<div class=\"md-media-lg card-media\"></div>\n" +
+    "			  </md-card-title-media>\n" +
+    "			</md-card-title>\n" +
+    "			<md-card-actions layout=\"row\" layout-align=\"end center\">\n" +
+    "			  <md-button>Action 1</md-button>\n" +
+    "			  <md-button>Action 2</md-button>\n" +
+    "			</md-card-actions>\n" +
+    "		  </md-card>\n" +
+    "		  <md-card md-theme=\"{{ showDarkTheme ? 'dark-orange' : 'default' }}\" md-theme-watch>\n" +
+    "			<md-card-title>\n" +
+    "			  <md-card-title-text>\n" +
+    "				<span class=\"md-headline\">Card with image</span>\n" +
+    "				<span class=\"md-subhead\">Extra Large</span>\n" +
+    "			  </md-card-title-text>\n" +
+    "			</md-card-title>\n" +
+    "			<md-card-content layout=\"row\" layout-align=\"space-between\">\n" +
+    "			  <div class=\"md-media-xl card-media\"></div>\n" +
+    "	\n" +
+    "			  <md-card-actions layout=\"column\">\n" +
+    "				<md-button class=\"md-icon-button\" aria-label=\"Favorite\">\n" +
+    "				  <md-icon md-svg-icon=\"img/icons/favorite.svg\"></md-icon>\n" +
+    "				</md-button>\n" +
+    "				<md-button class=\"md-icon-button\" aria-label=\"Settings\">\n" +
+    "				  <md-icon md-svg-icon=\"img/icons/menu.svg\"></md-icon>\n" +
+    "				</md-button>\n" +
+    "				<md-button class=\"md-icon-button\" aria-label=\"Share\">\n" +
+    "				  <md-icon md-svg-icon=\"img/icons/baseline-share-24px.svg\"></md-icon>\n" +
+    "				</md-button>\n" +
+    "			  </md-card-actions>\n" +
+    "			</md-card-content>\n" +
+    "		  </md-card>\n" +
+    "		</div>\n" +
+    "		<div flex-xs flex-gt-xs=\"50\" layout=\"column\">\n" +
+    "		  <md-card md-theme=\"{{ showDarkTheme ? 'dark-purple' : 'default' }}\" md-theme-watch>\n" +
+    "			<md-card-title>\n" +
+    "			  <md-card-title-text>\n" +
+    "				<span class=\"md-headline\">Card with image</span>\n" +
+    "				<span class=\"md-subhead\">Small</span>\n" +
+    "			  </md-card-title-text>\n" +
+    "			  <md-card-title-media>\n" +
+    "				<div class=\"md-media-sm card-media\"></div>\n" +
+    "			  </md-card-title-media>\n" +
+    "			</md-card-title>\n" +
+    "			<md-card-actions layout=\"row\" layout-align=\"end center\">\n" +
+    "			  <md-button>Action 1</md-button>\n" +
+    "			  <md-button>Action 2</md-button>\n" +
+    "			</md-card-actions>\n" +
+    "		  </md-card>\n" +
+    "		  <md-card md-theme=\"{{ showDarkTheme ? 'dark-blue' : 'default' }}\" md-theme-watch>\n" +
+    "			<md-card-title>\n" +
+    "			  <md-card-title-text>\n" +
+    "				<span class=\"md-headline\">Card with image</span>\n" +
+    "				<span class=\"md-subhead\">Medium</span>\n" +
+    "			  </md-card-title-text>\n" +
+    "			  <md-card-title-media>\n" +
+    "				<div class=\"md-media-md card-media\"></div>\n" +
+    "			  </md-card-title-media>\n" +
+    "			</md-card-title>\n" +
+    "			<md-card-actions layout=\"row\" layout-align=\"end center\">\n" +
+    "			  <md-button>Action 1</md-button>\n" +
+    "			  <md-button>Action 2</md-button>\n" +
+    "			</md-card-actions>\n" +
+    "		  </md-card>\n" +
+    "		  <div layout layout-padding layout-align=\"center end\" style=\"height:200px\">\n" +
+    "			<md-checkbox ng-model=\"showDarkTheme\">Use 'Dark' Themed Cards</md-checkbox>\n" +
+    "		  </div>\n" +
+    "		</div>\n" +
+    "	  </md-content>\n" +
     "	<br>\n" +
     "	<div class=\"well text-center\">\n" +
     "		<h1>{{ vm.title }}</h1>\n" +
